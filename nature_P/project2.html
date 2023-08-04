@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .project{
+            background: rgb(115, 38, 89);           
+        }
+        .project .heading{
+            color: rgb(205, 199, 199);
+            font-size: 80px;
+            margin: 0%;
+        
+        }    
+        .project .box-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 80%;
+            padding:10%;
+            margin: 0 auto;
+
+        }
+        .project .box-container .box{
+            flex: 1 1 30rem;
+            height: 22rem;
+            box-shadow: #fff;
+            position: relative;
+            margin: 1rem;
+        }
+        .project .box-container .box img{
+            width:100%;
+            height: 100%;
+            position:absolute;
+            top: 0; left:0;
+            display:flex;
+            align-items: flex-end;
+            justify-content: space-around; 
+            margin: 0%;                       
+        }
+        .navigation a {
+            color: rgb(199, 45, 140);
+            text-decoration: none;
+            font-weight: 900;
+            letter-spacing: 1px;
+            padding: 4px 40px;
+            border-radius: 10px;
+            transition: 0.2s;
+            font-size: 2rem;
+            align-items: center;
+            justify-content: space-between;
+            padding:5 0.1rem;
+            margin-left: 4%;
+            
+            
+        }
+
+
+
+        .navigation a:hover {
+            background: rgb(57, 107, 119);
+            color: burlywood;
+        }
+       
+                
+
+</style>
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="index_project.html">Home</a>
+        <a href="project1.html">About</a>
+        <a href="pro.html">Donate</a>
+        <a href="project2.html">Project</a>
+        <a href="project4.html">Service</a>
+
+    </div>
+
+    <section class="project" id="project">
+        <h1 class="heading">
+           " Our Projects "
+        </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="img\recycle.jfif" height="440rem" alt="">
+                
+            </div>
+            
+
+            <div class="box">
+                <img src="img\plant3.jpg" height="440rem" alt="">
+            </div>
+
+            <div class="box">
+                <img src="img\solar2.jpg" height="440rem" alt="">
+            </div>
+
+            <div class="box">
+                <img src="img\water2.jpg" height="440rem" alt="">
+            </div>
+
+            <div class="box">
+                <img src="img\forest2.webp" height="440rem" alt="">
+            </div>
+
+            <div class="box">
+                <img src="img\animal3.jpeg" height="440rem" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

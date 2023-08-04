@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        .about{
+            background: #80be50;
+        
+        }
+        .about .heading{
+            color: rgb(17, 99, 6);
+            font-size: 80px;
+        
+        }    
+        .about .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-weight: 300;
+        }
+
+        .about .row .image {
+            flex: 1 1 40rem;
+            padding: 2rem;
+        }
+
+        .about .row .image img {
+            width: 100%;
+        }
+
+        .about .row .content {
+            flex: 1 1 40rem;
+            padding: 2rem;
+        }
+
+        .about .row .content {
+            font-size: 3rem;
+            color: rgb(11, 75, 75);
+        }
+
+        .about .row .content p {
+            font-size: 1.5rem;
+            color: rgb(122, 50, 12);
+            padding: 1rem 0;
+        }
+
+        .about .box-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .about .box-container .box {
+            padding: 2rem 1rem;
+            text-align: center;
+            border: 2rem solid (#53151d);
+            flex: 1 1 20rem;
+            margin: 2rem;
+        }
+
+        .about .box-container .box h3 {
+            color: rgb(6, 66, 84);
+            font-size: 1.9rem;
+            padding: 1rem 0;
+        }
+
+        .about .box-container .box p {
+            color: rgb(65, 79, 3);
+            font-size: 1.9rem;
+            font-weight: 800;
+
+        }
+        .content  button{
+            background: rgb(95, 143, 51);
+            font-size: 1.2rem;
+            color: rgb(56, 21, 89);
+            height: 2rem;
+            width: 15%;
+            padding: 1px 4px;
+            border-radius: 10px;
+        }
+        .content button:hover{
+            background: #0d8f09;
+            color:rgb(235, 244, 237);
+        }
+        .navigation a {
+            background: #60e584;
+            color: rgb(103, 90, 10);
+            text-decoration: none;
+            font-weight: 900;
+            letter-spacing: 1px;
+            padding: 1px 20px;
+            border-radius: 10px;
+            transition: 0.1s;
+            font-size: 2rem;
+            align-items: center;
+            justify-content: space-between;
+            padding:5 0.1rem;
+            margin-left: 4%;
+            
+        }
+        .navigation a:hover {
+            background: rgb(36, 152, 61);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="index_project.html">Home</a>
+        <a href="project1.html">About</a>
+        <a href="pro.html">Donate</a>
+        <a href="project2.html">Project</a>
+        <a href="project4.html">Service</a>
+
+    </div>
+
+    <section class="about" id="about">
+        <h1 class="heading">
+            " About Us "
+        </h1>
+        <div class="row">
+            
+            <div class="content">
+                <h3>Together we can save the planet</h3>
+                <p>Healthy ecosystems clean our water, purify our air, maintain our soil, regulate the climate, recycle nutrients and provide us with food. They provide raw materials and resources for medicines and other purposes. They are at the foundation of all civilisation and sustain our economies.</p>
+                <p>Natural resources are available in fixed quantity and they are non renewable, 8. Natural resources are getting scarce with the increasing population, so it is essential to conserve them. This empowers us as well as our future generation to utilise the natural resources to the full extent.</p>
+                    <a href="#"><button class="btn">read more>></button></a>
+            </div>
+        </div>
+
+        <div class="box-container">
+
+            <span class="box">
+                <h3>1000+</h3>
+                <p><b>volunteers</b></p>
+            </span>
+
+            <span class="box">
+                <h3>1300+</h3>
+                <p><b>tree planted</b></p>
+            </span>
+
+            <span class="box">
+                <h3>450+</h3>
+                <p><b>animal saved</b></p>
+            </span>
+
+            <span class="box">
+                <h3>850+</h3>
+                <p><b>donators</b></p>
+            </span>
+        </div>
+    </section>
+    
+</body>
+</html>

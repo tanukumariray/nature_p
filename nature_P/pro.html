@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <style>
+        .donate {
+            background: none;
+        }
+
+        .donate .heading {
+            color: rgb(58, 29, 29);
+            font-size: 80px;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .navigation a {
+            color: rgb(176, 91, 6);
+            text-decoration: none;
+            font-weight: 900;
+            letter-spacing: 1px;
+            padding: 1px 20px;
+            border-radius: 10px;
+            transition: 0.1s;
+            font-size: 2rem;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5 0.1rem;
+            margin-left: 4%;
+
+        }
+
+
+
+        .navigation a:hover {
+            background: rgb(235, 206, 114);
+            color: rgb(69, 53, 53);
+        }
+        input{
+            width: 600px;
+            height: 35px;
+            border-radius: 5px;
+            border: 2px solid rgb(228, 118, 29);
+            font-size: 20px;
+        }
+        #btn{
+            background-color: rgb(114, 134, 134);
+            color: rgb(25, 77, 90);
+            font-size: 30px;
+            border-radius: 0px 50px;
+            letter-spacing: 6px;
+        }
+        #btn:hover{
+            color: rgb(11, 70, 14);
+            background-color: rgb(189, 207, 199);
+        }
+        #se{
+            font-size: 20px;
+            height: 30px;
+            width: 90px;
+        }
+        td{
+            font-size: 30px;
+        }
+        table{
+            background: rgb(136, 194, 122);
+        }
+    </style>
+</head>
+
+<body background="img\rose.jpg">
+    <center>
+        <div class="navigation">
+            <a href="index_project.html">Home</a>
+            <a href="project1.html">About</a>
+            <a href="pro.html">Donate</a>
+            <a href="project2.html">Project</a>
+            <a href="project4.html">Service</a>
+
+        </div>
+    </center>
+
+    <section class="donate" id="donate">
+        <h1 class="heading">
+            <marquee>
+                " Donate Us "
+            </marquee>
+        </h1>
+>
+    <form action="#" autocomplete="off" onsubmit="return validation()">
+        <table cellspacing="15" align="center" >
+                <tr><td><input type="text" name="" placeholder="Name" id="na"></td>
+                <tr><td><input type="mail" name="" placeholder="Email" id="em"></td> </tr>
+                <tr><td><input type="number" name="" placeholder="Mobile no." id="mo"></td></tr> 
+                <tr><td>Donate amount :
+                    <select id="se">
+                        <option>1000</option>
+                        <option>2000</option>
+                        <option>3000</option>
+                        <option>4000</option>
+                        <option>5000</option>
+                    </select>
+                </td>
+            <tr><td><input type="submit" name="" value="Submit" id="btn"></td></tr>
+        </table>
+    </form>
+    <script type="text/javascript">
+        function validation()
+        {
+            var name = document.getElementById('na').value;
+            var email=document.getElementById('em').value;
+            var mobile=document.getElementById('mo').value;
+            var amt=document.getElementById('se').value;
+            if(name=="" || name.length==0)
+            {
+                alert("Please write user name")
+            }
+           else if(email=="" || email.length==0)
+            {
+                alert("Please enter correct email")
+            }
+           else if(mobile=="" || mobile.length!=10)
+            {
+                alert("Please enter mobile number")
+            }
+           else if(amt=="" || name.length==0)
+            {
+                alert("Please select amount")
+            }
+        }
+
+    </script>
+</body>
+
+</html>
